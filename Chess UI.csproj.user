@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\DANIEL\source\repos\Chess game\Chess UI\Properties\PublishProfiles\FolderProfile3.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="GameInfoWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GameOverMenu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PauseMenu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PromotionMenu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SoundOptionsWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StartMenuWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="GameInfoWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GameOverMenu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PauseMenu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PromotionMenu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SoundOptionsWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StartMenuWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

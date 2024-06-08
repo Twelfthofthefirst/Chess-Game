@@ -1,0 +1,45 @@
+﻿<Window x:Class="Chess_UI.StartMenuWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Chess_UI"
+        mc:Ignorable="d"
+        Title="Start Menu" WindowState="Maximized"
+        Icon="Assets/icon.ico"
+        WindowStartupLocation="CenterScreen"
+        Background="{DynamicResource StrokeColor}">
+
+    <Window.Resources>
+        <Style x:Key="ButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="{DynamicResource StrokeColor}"/>
+            <Setter Property="Foreground" Value="{DynamicResource TextColor}"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Width" Value="200"/>
+            <Setter Property="Margin" Value="10"/>
+        </Style>
+        <Style x:Key="TitleTextStyle" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="{DynamicResource TextColor}"/>
+            <Setter Property="FontSize" Value="48"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="20"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <!-- Background Image -->
+        <Image Source="/HomeScreen/Chess background 2.jpg" Stretch="Fill" Opacity="0.3"/>
+
+        <!-- Title Text -->
+        <TextBlock Text="CHESS MASTERS" Style="{StaticResource TitleTextStyle}" VerticalAlignment="Top"/>
+
+        <MediaElement Name="BackgroundMusic" LoadedBehavior="Manual" UnloadedBehavior="Stop" Volume="1.5" Visibility="Collapsed" />
+        <!-- Buttons -->
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button x:Name="btnStartGame" Content="START GAME" Style="{StaticResource ButtonStyle}" Click="BtnStartGame_Click"/>
+            <Button x:Name="btnSoundOptions" Content="SOUND OPTIONS" Style="{StaticResource ButtonStyle}" Click="BtnSoundOptions_Click"/>
+            <Button x:Name="btnGameInfo" Content="GAME INFO" Style="{StaticResource ButtonStyle}" Click="BtnGameInfo_Click"/>
+            <Button x:Name="btnExit" Content="EXIT" Style="{StaticResource ButtonStyle}" Click="BtnExit_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
